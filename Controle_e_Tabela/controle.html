@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <b>
+        <FONT size="5" ><h1>Controle</h1></FONT>
+    </b>
+        <li id="lista"> Alunos <button id="buttons">📕</button> </li>
+        <li id="lista"> Professores <button id="buttons" onclick="let click = () => {window.location.href = './Tabela_professores.html' }; click();">📕</button> </li>
+        <li id="lista"> Disciplinas <button id="buttons">📕</button> </li>
+        <li id="lista"> Turmas <button id="buttons">📕</button></li>
+
+        <button  style="justify-content: left;" id="buttons" onclick="click = () => {
+        window.location.href = '../index.html'}; click(); "> Voltar </button>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Professores</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        td, th {
+            padding: .7em;
+            margin: 0;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: .7em 1.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <FONT size="5" ><h1>Tabela de professores</h1></FONT>
+
+    <table border="1">
+        <th>Matérias</th> 
+        <th> Professores</th>
+        <tr>
+            <td> Matemática </td>
+            <td>  Daniel Assis </td>
+        </tr>
+        <tr>
+            <td>Português</td>
+            <td> Victor Reis</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td> Maurício de Oliveira</td>
+        </tr>
+    </table>
+    <button  style="justify-content: left;" id="buttons" onclick="let click = () => {
+        window.location.href = './controle.html'}; click(); "> Voltar </button>
+</body>
+
+</html>

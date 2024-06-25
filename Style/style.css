@@ -1,33 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-*{
-    margin: 100;
+* {
+  margin: 100;
 }
 body {
-    background-color: #161b22;
-    text-align: center;
-    font-family: calibri, sans-serif;
-    color: rgb(255, 255, 255);
-    align-items: space-between;
+  background-color: #161b22;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
 }
 
-#background {
-    background-image: url("");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 #lista {
-    font-size: 15px;
-    font-family: MontSerrat;
-    font-weight: bold;
-    margin-bottom: 3px;
-    
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
-label{
-    font-family: MontSerrat;
-    font-weight: bold;
-    text-align:right;
+label {
+  font-weight: bold;
+  text-align: right;
+}
+
+#buttons {
+  background-color: rgb(43, 43, 43);
+  color: aliceblue;
+  font-family: MontSerrat;
+  padding: .7em 1.5em;
 }
