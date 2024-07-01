@@ -10,21 +10,51 @@
         body {
             text-align: center;
         }
+
+        button.voltar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            background-color: rgb(43, 43, 43);
+            color: aliceblue;
+            font-family: MontSerrat;
+            padding: .7em 1.5em;
+        }
+
+        .hide {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <b>
-        <FONT size="5" ><h1>Controle</h1></FONT>
+        <FONT size="5">
+            <h1>Controle</h1>
+        </FONT>
     </b>
-        <li id="lista"> Alunos <button id="buttons">📕</button> </li>
-        <li id="lista"> Professores <button id="buttons" onclick="let click = () => {window.location.href = './Tabela_professores.html' }; click();">📕</button> </li>
-        <li id="lista"> Disciplinas <button id="buttons">📕</button> </li>
-        <li id="lista"> Turmas <button id="buttons">📕</button></li>
+    <li id="lista"> Alunos <button id="buttons">📕</button> </li>
+    <li id="lista"> Professores <button id="buttons"
+            onclick="let click = () => {window.location.href = './Tabela_professores.html' }; click();">📕</button>
+    </li>
+    <li id="lista"> Disciplinas <button id="buttons">📕</button> </li>
+    <li id="lista"> Turmas <button id="buttons">📕</button></li>
+    <li id="lista"> Regimento <button onclick="click = () => {
+        window.location.href = '../Cadastro_alunos/Regimento.html'}; click()" id="buttons">📕</button> </li>
 
-        <button  style="justify-content: left;" id="buttons" onclick="click = () => {
+    <button style="justify-content: left;" id="Voltar" class="voltar" onclick="click = () => {
         window.location.href = '../index.html'}; click(); "> Voltar </button>
 
+    <script>
+        let IsInAFrame = () => {
+            return window.self !== window.top;
+        }
+
+        if (IsInAFrame()) {
+            document.getElementById("Voltar").classList.add('hide')
+        }
+    </script>
 </body>
 
 </html>
