@@ -4,28 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página inicial</title>
     <link rel="stylesheet" href="./Style/style.css">
 </head>
 
 <body>
-    <h1 style="text-align: center;">
-        <font size="6">Controle Acadêmico</font>
-    </h1>
+    <font size="6">
+        <h1 style="text-align: center;"> Controle Acadêmico </h1>
+    </font>
     <img alt="logo" src="https://ayine.com.br/wp-content/uploads/2022/03/Miolo-diagonal-O-livro-dos-amigos-site.png"
         width="150" height="120">
-    <p>
-        <Font face="calibri" color="white" size="4"> Bem vindo ao sistema de controle acadêmico <br> aqui poderá checar
-            suas <a target="_blank" href="./dados_aluno/notas.html">notas</a>
-            <br>
-            e também sua <a target="_blank" href="./dados_aluno/frequência.html">frequência</a>
-        </Font>
-    </p>
-    <iframe src="./Controle_e_Tabela/controle.html" width="300" height="250"></iframe>
+
+    <Font face="calibri" color="white" size="5">
+        <p> Bem vindo ao sistema de controle acadêmico <br> aqui poderá checar
+            suas <a class="link" href="./dados_aluno/notas.html">notas</a> <br>
+            e também sua <a class="link" href="./dados_aluno/frequência.html">frequência</a>
+        </p>
+    </Font>
+    <iframe src="./Controle_e_Tabela/controle.html" width="500" height="350"></iframe>
     <br>
     <button onclick="let click = () => {
         window.location.href = './Controle_e_Tabela/controle.html';}
         click();
         " id="buttons">entrar no painel de controle </button>
 </body>
+
 </html>

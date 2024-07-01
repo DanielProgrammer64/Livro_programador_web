@@ -15,6 +15,7 @@ body {
   justify-content: center;
 }
 
+
 background {
   background-size: cover;
   background-repeat: no-repeat;
@@ -37,4 +38,8 @@ label {
   color: aliceblue;
   font-family: MontSerrat;
   padding: .7em 1.5em;
+}
+
+a {
+  text-decoration:wavy;
 }
